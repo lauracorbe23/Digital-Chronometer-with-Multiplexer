@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Timer_.srcs/sources_1/new/counter.sv" \
+"../../../../Timer_.srcs/sources_1/new/decor_0hot.sv" \
+"../../../../Timer_.srcs/sources_1/new/freq_div.sv" \
+"../../../../Timer_.srcs/sources_1/new/ram4x4.sv" \
+"../../../../Timer_.srcs/sources_1/new/timer.sv" \
+"../../../../Timer_.srcs/sources_1/new/top.sv" \
+"../../../../Timer_.srcs/sources_1/new/transcoder_7seg.sv" \
+"../../../../Timer_.srcs/sim_1/new/tb_top.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
